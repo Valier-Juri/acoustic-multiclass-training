@@ -53,7 +53,7 @@ class Config():
         cls.package_root = pkg_resources.files("pyha_analyzer")
         #Set defaults config
         # Pyright is wrong, this function does exist
-        with cls.package_root.joinpath("default_config.yml") \
+        with cls.package_root.joinpath("config.yml") \
                 .open('r', encoding='utf-8') as file: #type: ignore
             cls.config_dict = yaml.safe_load(file)
 
